@@ -1,0 +1,159 @@
+$mainColor: whitesmoke;
+$bg-light: #f8f9fa;
+
+* {
+  box-sizing: border-box
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  margin: 0;
+}
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+.content {
+  padding: 10px;
+  min-height: calc(100vh - 10em);
+  display: flex;
+  flex-direction: column;
+}
+
+// #region FEATURES-ICONS SECTION
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem
+}
+//#endregion
+
+//#region TEXT RELATED
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+//#endregion
+
+//#region JUMBOTRON
+#jumbotron {
+  background: url("https://images.pexels.com/photos/552784/pexels-photo-552784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin-bottom: 0;
+}
+
+#jumbotron h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  #jumbotron {
+      padding-top:12rem;
+      padding-bottom: 12rem;
+  }
+
+  #jumbotron h1 {
+      font-size: 3rem
+  }
+}
+//#endregion
+
+//#region SHOWCASE
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+#showcase-image-1 {
+  background-image: url("https://images.pexels.com/photos/193004/pexels-photo-193004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#showcase-image-2 {
+  background-image: url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#showcase-image-3 {
+  background-image: url("https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.showcase .showcase-text {
+  padding: 3rem
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+      padding:7rem;
+  }
+}
+//#endregion
+
+//#region TESTIMONIALS
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0 5px 5px 0 #adb5bd
+}
+//#endregion
+
+//#region CALL TO ACTION
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("https://images.pexels.com/photos/552784/pexels-photo-552784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem
+}
+//#endregion
+
+//#region FOOTER
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+//#endregion
