@@ -1,3 +1,5 @@
 ## Template Landing Page
 
-Template simples para landing page feito com React. Pode ser usado como ponto de partida para seu projeto.
+Template simples para landing page feito com React e [react-bootstrap](https://react-bootstrap.github.io/). Pode ser usado como ponto de partida para seu projeto.
+
+[Demonstração da landing page](https://felcg.github.io/BootstrapLandingPage/)
