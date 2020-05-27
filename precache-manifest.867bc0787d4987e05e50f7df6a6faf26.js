@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65ee4e44c253eb3c634585832f4a3781",
+    "revision": "a55b56e0dd2738f1bed22819f867b1a2",
     "url": "/BootstrapLandingPage/index.html"
   },
   {
-    "revision": "6615da5d20a4806df9b0",
+    "revision": "abe5990702ad87c2261d",
     "url": "/BootstrapLandingPage/static/css/main.d0f5471b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BootstrapLandingPage/static/js/2.199fa88d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6615da5d20a4806df9b0",
-    "url": "/BootstrapLandingPage/static/js/main.677febda.chunk.js"
+    "revision": "abe5990702ad87c2261d",
+    "url": "/BootstrapLandingPage/static/js/main.123285b5.chunk.js"
   },
   {
     "revision": "8c626f029b099caa1af8",
