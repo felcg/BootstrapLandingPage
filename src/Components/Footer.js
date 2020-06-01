@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Footer = () => (
   <div className="footer bg-light">

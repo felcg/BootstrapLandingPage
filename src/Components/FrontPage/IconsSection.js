@@ -5,31 +5,38 @@ const IconsSection = () => (
   <section className="features-icons text-center bg-light">
     <Container>
       <Row>
-        <Col lg={4}>
-          <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+        <Col lg={4} className="mb-5">
+          <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 d-flex flex-column">
             <div className="features-icons-icon d-flex">
-              <i className="icon-screen-desktop m-auto text-primary" />
+              <i className="icon-screen-desktop m-auto text-light" />
             </div>
-            <h3>Página Totalmente Responsiva</h3>
-            <p className="lead mb-0">Esse tema vai funcionar em qualquer aparelho, não importa o tamanho!</p>
+            <div className="mt-auto">
+              <h3 className="text-light">Página Responsiva</h3>
+              <p className="lead mb-0 text-light">Esse tema vai funcionar em qualquer aparelho, não importa o tamanho!</p>
+            </div>
+
           </div>
         </Col>
-        <Col lg={4}>
-          <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+        <Col lg={4} className="mb-5">
+          <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 d-flex flex-column">
             <div className="features-icons-icon d-flex">
-              <i className="icon-layers m-auto text-primary" />
+              <i className="icon-layers m-auto text-light" />
             </div>
-            <h3>Compatível Com Bootstrap 4</h3>
-            <p className="lead mb-0">Utilizamos a versão mais atualizada da framework mais popular do mercado!</p>
+            <div className="mt-auto">
+              <h3 className="text-light">Bootstrap 4</h3>
+              <p className="lead mb-0 text-light">Utilizamos a versão mais atualizada da framework mais popular do mercado!</p>
+            </div>
           </div>
         </Col>
-        <Col lg={4}>
-          <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+        <Col lg={4} className="mb-5">
+          <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 d-flex flex-column">
             <div className="features-icons-icon d-flex">
-              <i className="icon-check m-auto text-primary" />
+              <i className="icon-check m-auto text-light" />
             </div>
-            <h3>Fácil De Usar</h3>
-            <p className="lead mb-0">Pronta para usar com seu conteúdo e com arquivos customizáveis!</p>
+            <div className="mt-auto">
+              <h3 className="text-light">Fácil De Usar</h3>
+              <p className="lead mb-0 text-light">Pronta para usar com seu conteúdo e com arquivos customizáveis!</p>
+            </div>
           </div>
         </Col>
       </Row>

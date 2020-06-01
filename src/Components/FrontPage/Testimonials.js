@@ -1,31 +1,72 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import {
+  Container, Row, Col, Card,
+} from 'react-bootstrap'
+import gregorio from '../../Assets/img/gregorio.jpg'
+import renan from '../../Assets/img/renan.jpg'
+import leticia from '../../Assets/img/leticia.jpg'
 
 const Testimonials = () => (
-  <section className="testimonials text-center bg-light">
+  <section className="testimonials text-center bg-primary">
     <Container>
-      <h2 className="mb-5">Depoimentos</h2>
+      <div>
+        <h1 id="testimonials_header" className="text-light display-5">Depoimentos</h1>
+      </div>
       <Row>
         <Col lg={4}>
-          <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img className="img-fluid rounded-circle mb-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKM9BUy0eVYn8_C3sg0J40Oa5MlWpFbS83fleauNdF4W5HQQJQ&usqp=CAU" alt="" />
-            <h5>Gregorio</h5>
-            <p className="font-weight-light mb-0">"Incrível! Funcionou perfeitamente para o meu negócio!"</p>
+          <div className="testimonial-item mx-auto mb-5 mb-lg-0 h-100">
+            <Card>
+              <Card.Img variant="top" src={gregorio} />
+              <Card.Body className="d-flex flex-column">
+                <Card.Text className="my-auto font-weight-600 text-secondary">
+                  Muito bom, funcionou perfeitamente para o meu negócio.
+                  Gostei principalmente da facilidade de customização.
+                  Pude deixar compatível com minhas ideias. Recomendo.
+                </Card.Text>
+                <div className="mt-auto">
+                  <Card.Title className="text-primary font-weight-bold">Gregorio Bastos</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">CEO</Card.Subtitle>
+                  <Card.Subtitle className="mb-2 text-muted font-weight-bold">Gregorio's Pizzaria</Card.Subtitle>
+                </div>
+              </Card.Body>
+            </Card>
           </div>
         </Col>
         <Col lg={4}>
-          <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img className="img-fluid rounded-circle mb-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQL-6bDuOdXP3_OUj8K7IXlIm8Y5pl1PFWSjVHbryy9BBTHzb5N&usqp=CAU" alt="" />
-            <h5>Renan</h5>
-            <p className="font-weight-light mb-0">"O fato da página estar usando Bootstrap 4 fez toda a diferença para mim. Excelente!"</p>
+          <div className="testimonial-item mx-auto mb-5 mb-lg-0 h-100">
+            <Card>
+              <Card.Img variant="top" src={renan} />
+              <Card.Body className="d-flex flex-column">
+                <Card.Text className="my-auto font-weight-600 text-secondary">
+                  Bom demais, quem sabe sabe realmente.
+                  Fico admirado com a capacidade desse desenvolvedor.
+                  Que template bom. UAU!
+                </Card.Text>
+                <div className="mt-auto">
+                  <Card.Title className="text-primary font-weight-bold">Renan Figueiredo</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Analista de Marketing</Card.Subtitle>
+                  <Card.Subtitle className="mb-2 text-muted font-weight-bold">Dunder Mifflin</Card.Subtitle>
+                </div>
+              </Card.Body>
+            </Card>
           </div>
         </Col>
         <Col lg={4}>
-          <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img className="img-fluid rounded-circle mb-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwzchYQWo5ZzCtzVzTFwdIrGTS0FRs2TCVJhas2v8ssl80fBu9&usqp=CAU" alt="" />
-            <h5>Leticia</h5>
-            <p className="font-weight-light mb-0">"Muito obrigada pelo trabalho, atingiu minhas expectativas!"</p>
+          <div className="testimonial-item mx-auto mb-5 mb-lg-0 h-100">
+            <Card>
+              <Card.Img variant="top" src={leticia} />
+              <Card.Body className="d-flex flex-column">
+                <Card.Text className="my-auto font-weight-600 text-secondary">
+                  Muito obrigada pelo trabalho, atingiu minhas expectativas!
+                </Card.Text>
+                <div className="mt-auto">
+                  <Card.Title className="text-primary font-weight-bold">Leticia Schapenhauzer</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Desenvolvedora</Card.Subtitle>
+                  <Card.Subtitle className="mb-2 text-muted font-weight-bold">Golden Devs</Card.Subtitle>
+                </div>
+              </Card.Body>
+            </Card>
           </div>
         </Col>
       </Row>
