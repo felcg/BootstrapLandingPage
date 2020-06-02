@@ -17,9 +17,8 @@ const Showcase = () => (
         <Col lg={{ span: 6, order: 2 }} className="showcase-text my-auto">
           <h2 className="text-primary">O que é Landing Page?</h2>
           <p className="lead mb-0">
-            A landing page oferece ao visitante todas a informação necessária para que ele
-            conheça e deseje o produto. É muito mais seguro que ele finalize a compra. Você
-            está em uma landing page!
+            A landing page oferece ao visitante toda a informação necessária para que ele
+            conheça e deseje o produto. Você está em uma landing page!
           </p>
         </Col>
       </Row>
@@ -30,9 +29,9 @@ const Showcase = () => (
         <Col lg={{ span: 6, order: 1 }} className="showcase-text my-auto">
           <h2 className="text-primary">Objetividade</h2>
           <p className="lead mb-0">
-            As informações presentes em uma landing page são mais objetivas,
-            indo direto ao ponto e passando com clareza o que o cliente precisa saber
-            e o que ele vai ganhar preenchendo o formulário daquela página.
+            Informações objetivas, indo direto ao ponto!
+            Perfeita para a internet moderna onde cada
+            segundo de atenção vale muito.
           </p>
         </Col>
       </Row>
@@ -43,9 +42,8 @@ const Showcase = () => (
         <Col lg={{ span: 6, order: 2 }} className="showcase-text my-auto">
           <h2 className="text-primary">Conversão</h2>
           <p className="lead mb-0">
-            Quanto menos distrações e opções de clique a página tiver,
-            maiores são as chances de o usuário realizar a ação que está determinada ali.
-            E aí, a taxa de conversão sobe significativamente.
+            Quanto menos distrações maiores as chances do usuário
+            realizar a ação desejada. Alta taxa de conversão!
           </p>
         </Col>
       </Row>
