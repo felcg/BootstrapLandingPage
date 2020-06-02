@@ -1,19 +1,19 @@
 import React from 'react'
 import {
-  Container, Jumbotron, Row, Col, Form, Button, Image,
+  Container, Row, Col, Form, Button, Image,
 } from 'react-bootstrap'
-import HeaderImg from '../../Assets/img/undraw_trendy_interface_lg8x.svg'
+import HeaderImg from '../../Assets/img/undraw_social_friends_nsbv.svg'
 
 const Header = () => (
-  <Jumbotron id="jumbotron" fluid>
+  <div id="jumbotron">
     <Container fluid className="text-center text-white mx-auto" id="header_container">
       <Row>
-        <Col xl={6}>
-          <Col xl={12} className="col-auto text-xl-left text-center">
+        <Col md={6}>
+          <Col xl={12} className="col-auto text-xl-left text-md-left text-center">
             <h1 className="display-4">Landing Page Customizada</h1>
             <h4 className="mb-5">Faça uma landing page para seu negócio e atraia mais clientes!</h4>
           </Col>
-          <Col md={10} lg={8} xl={12} className="mx-auto">
+          <Col xl={12} className="mx-auto">
             <Form>
               <Form.Row>
                 <Col md={8} className="col-12 mb-2 mb-md-0">
@@ -26,12 +26,12 @@ const Header = () => (
             </Form>
           </Col>
         </Col>
-        <Col xl={6}>
+        <Col md={6} className="mt-4">
           <Image fluid className="mx-auto" src={HeaderImg} />
         </Col>
       </Row>
     </Container>
-  </Jumbotron>
+  </div>
 )
 
 export default Header
