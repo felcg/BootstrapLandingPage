@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 const IconsSection = () => (
-  <section className="features-icons text-center bg-light">
+  <section className="features-icons text-center">
     <Container>
       <Row>
         <Col lg={4} className="mb-5">
@@ -23,8 +23,8 @@ const IconsSection = () => (
               <i className="icon-layers m-auto text-light" />
             </div>
             <div className="mt-auto">
-              <h3 className="text-light">Bootstrap 4</h3>
-              <p className="lead mb-0 text-light">Utilizamos a versão mais atualizada da framework mais popular do mercado!</p>
+              <h3 className="text-light">Design Moderno</h3>
+              <p className="lead mb-0 text-light">Design moderno que acompanha as tendências mundiais!</p>
             </div>
           </div>
         </Col>
