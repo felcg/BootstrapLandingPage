@@ -4,6 +4,7 @@ $primary: #5d78ff;
 $secondary: #495058;
 $info: #DE9F54;
 $light: #f3f5f7;
+$dark: #111315;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -12,10 +13,14 @@ $mainColor: whitesmoke;
 * {
   box-sizing: border-box
 }
+
+
 body {
   font-family: 'Open Sans', sans-serif;
-  // font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -109,15 +114,29 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 8rem;
-  padding-bottom: 8rem;
   margin-bottom: 0;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 
   .col-left {
     margin-left: 0;
   }
+}
+
+#jumbotron::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  border-right: 100vw solid white;
+  border-top: 200px solid transparent;
+  width: 0;
+  z-index: 0;
 }
 
 #jumbotron h1 {
@@ -128,6 +147,19 @@ body {
 
 #header_container {
   max-width: 1020px;
+}
+
+#header_button {
+  height: 100%;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  #header_button {
+    height: 100%;
+    font-size: 1rem;
+    width: 9rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -161,35 +193,52 @@ body {
 //#endregion
 
 //#region SHOWCASE
-.showcase h2 {
-  font-size: 3rem;
-  color: #212b35;
-}
-
-.showcase .showcase-img {
-  min-height: 30rem;
+.showcase {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+  
+  .showcase-text {
+    padding: 5rem
+  }
+
+  .showcase-img {
+    width: 70%;
+  }
+
+  .showcase-col-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .showcase-row {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }
 
-#showcase-image-1 {
-  background-image: url("https://images.pexels.com/photos/193004/pexels-photo-193004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-}
+@media(min-width: 1600px) {
+  .showcase {
+    .showcase-text {
+      padding: 6rem;
+    }
 
-#showcase-image-2 {
-  background-image: url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-}
+    .showcase-img {
+      width: 60%;
+    }
 
-#showcase-image-3 {
-  background-image: url("https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-}
-
-.showcase .showcase-text {
-  padding: 3rem
-}
-
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-      padding:8rem;
+    .showcase-row {
+      margin-left: 15rem;
+      margin-right: 15rem;
+    }
   }
 }
 //#endregion
@@ -242,12 +291,11 @@ body {
 
 //#region CALL TO ACTION
 .call-to-action {
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0);
   padding-top: 7rem;
-  padding-bottom: 15rem;
-  background-size: 100%;
+  padding-bottom: 7rem;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-attachment: fixed;
 }
 
 #call_to_action_heading {
@@ -255,11 +303,6 @@ body {
   font-size: 3rem;
 }
 
-@media (min-width: 996px) {
-  .call-to-action {
-    background-size: 40%;
-  }
-}
 //#endregion
 
 //#region FOOTER
