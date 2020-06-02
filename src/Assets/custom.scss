@@ -152,6 +152,7 @@ body {
 #header_button {
   height: 100%;
   font-size: 1rem;
+  background-color: white;
 }
 
 @media (min-width: 768px) {
@@ -220,8 +221,17 @@ body {
   }
 
   .showcase-row {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 768px){
+  .showcase {
+    .showcase-row {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
   }
 }
 
