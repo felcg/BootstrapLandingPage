@@ -20,7 +20,7 @@ const Header = () => (
                   <Form.Control size="lg" type="email" placeholder="Digite seu email..." className="email_input" />
                 </Col>
                 <Col md={4}>
-                  <Button variant="light" size="lg" block className="button_subscribe text-primary text-uppercase font-weight-bold" id="header_button">Se inscreva</Button>
+                  <Button size="lg" block className="button_subscribe text-primary text-uppercase font-weight-bold" id="header_button">Se inscreva</Button>
                 </Col>
               </Form.Row>
             </Form>
