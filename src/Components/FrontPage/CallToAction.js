@@ -2,10 +2,10 @@ import React from 'react'
 import {
   Container, Row, Col, Form, Button,
 } from 'react-bootstrap'
-import FooterImage from '../../Assets/img/Mobile_notification_SVG.svg'
+import CallToActionImage from '../../Assets/img/pattern553.svg'
 
 const CallToAction = () => (
-  <section className="call-to-action text-white text-center" style={{ backgroundImage: `url(${FooterImage})` }}>
+  <section className="call-to-action text-white text-center" style={{ backgroundImage: `url(${CallToActionImage})` }}>
     <Container>
       <Row>
         <Col xl={9} className="mx-auto">
