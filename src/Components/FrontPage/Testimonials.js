@@ -16,7 +16,7 @@ const Testimonials = () => (
       <Row>
         <Col lg={4}>
           <div className="testimonial-item mx-auto mb-5 mb-lg-0 h-100">
-            <Card>
+            <Card className="bg-light">
               <Card.Img variant="top" src={gregorio} />
               <Card.Body className="d-flex flex-column">
                 <Card.Text className="my-auto font-weight-600 text-secondary">
@@ -35,7 +35,7 @@ const Testimonials = () => (
         </Col>
         <Col lg={4}>
           <div className="testimonial-item mx-auto mb-5 mb-lg-0 h-100">
-            <Card>
+            <Card className="bg-light">
               <Card.Img variant="top" src={renan} />
               <Card.Body className="d-flex flex-column">
                 <Card.Text className="my-auto font-weight-600 text-secondary">
@@ -54,7 +54,7 @@ const Testimonials = () => (
         </Col>
         <Col lg={4}>
           <div className="testimonial-item mx-auto mb-5 mb-lg-0 h-100">
-            <Card>
+            <Card className="bg-light">
               <Card.Img variant="top" src={leticia} />
               <Card.Body className="d-flex flex-column">
                 <Card.Text className="my-auto font-weight-600 text-secondary">
